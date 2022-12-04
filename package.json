@@ -1,13 +1,15 @@
 {
-  "name": "my-next-utils",
+  "name": "@mindlid/next",
   "version": "0.1.0",
   "private": true,
+  "main": "",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
+    "build": "tsc --build",
     "lint": "next lint",
-    "link": "npm link"
+    "link": "npm link",
+    "pack": "npm pack --dry-run",
+    "publish": "npm publish --access=public",
+    "bump": "npm version patch"
   },
   "dependencies": {
     "@types/node": "18.11.10",
